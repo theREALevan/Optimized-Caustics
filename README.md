@@ -66,6 +66,23 @@ pip install drjit numpy matplotlib
         - Produce visualizations and GIFs of the optimization process
 6. **Check the outputs** in the `outputs/example/` directory. The main results are the optimized lens mesh (`lens_displaced.ply`) and the optimization progress GIF (`optimisation.gif`).
 
+## How to Change the Reference Images
+
+If you want to use your own images as caustic projection targets:
+1. **Prepare your new reference images** (preferably PNG format, and similar in size to the originals for best results).
+2. **Place your images in the `scenes/references/` directory.**
+3. **Edit the notebook configuration:**
+   - In the notebook, locate the section where the `CONFIGS` dictionary is defined (look for keys like `'reference_front'`, `'reference_wall'`, and `'reference_left'`).
+   - Change the file names/paths to point to your new images, e.g.:
+     ```python
+     'reference_front': join(SCENE_DIR, 'references/my_new_image.png'),
+     'reference_wall':  join(SCENE_DIR, 'references/my_wall_image.png'),
+     'reference_left':  join(SCENE_DIR, 'references/my_left_image.png'),
+     ```
+4. **Save and rerun the notebook.**
+
+The optimization will now use your new images as the caustic targets.
+
 ## Notes
 - The optimization process is computationally intensive and requires a CUDA-capable GPU.
 - Output files (especially `.ply` meshes) can be very large (multiple GBs).
