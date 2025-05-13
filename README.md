@@ -56,7 +56,7 @@ pip install drjit numpy matplotlib
 1. **Install all dependencies** as described above, ensuring Mitsuba 3 is working and the `cuda_ad_rgb` variant is available.
 2. **Clone or copy this repository** and ensure the directory structure matches the above.
 3. **Download or generate the required mesh and reference image files** (provided in the repository).
-4. **Open `Revised_4197_Final_Caustics.ipynb`** in Jupyter or your preferred notebook environment.
+4. **Open `4197_Final_Caustics.ipynb`** in Jupyter or your preferred notebook environment.
 5. **Run all cells in order.**
     - The notebook will:
         - Set up the scene and load reference images
@@ -71,6 +71,3 @@ pip install drjit numpy matplotlib
 - Output files (especially `.ply` meshes) can be very large (multiple GBs).
 - You may adjust parameters (resolution, iterations, etc.) in the notebook for faster or higher-quality results.
 - For troubleshooting Mitsuba 3 installation, refer to the [official documentation](https://mitsuba-renderer.org/documentation.html).
-
-## Citation
-If you use this code or ideas from this project, please cite the authors and the Mitsuba 3 renderer. 
