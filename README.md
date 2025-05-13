@@ -1,5 +1,8 @@
 # Caustic Projection Lamp: A Lamp That Is More Lamp
 
+![Teaser: Final Rendered Caustic Projection](images/output.png)
+*Teaser: Example of the final rendered caustic projection (see notebook for details)*
+
 **Authors:** Evan Zhang, Carrie Wang
 
 ## Overview
